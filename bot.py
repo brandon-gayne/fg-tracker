@@ -11,7 +11,7 @@ import os
 from datetime import date, datetime
 from discord_webhook import DiscordWebhook, DiscordEmbed 
 
-WEBHOOK_URL = os.env["WEBHOOK_URL"]
+WEBHOOK_URL = os.environ["WEBHOOK_URL"]
 
 req = requests.get("https://www.fantasygrounds.com/filelibrary/patchnotes_v4.html")
 forum = requests.get("https://www.fantasygrounds.com/forums/forumdisplay.php?37-City-Hall")
